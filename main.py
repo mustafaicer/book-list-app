@@ -28,10 +28,6 @@ class App(tk.CTk):
 
         self.info_label = tk.CTkLabel(self, font=('Arial', 21, 'bold'), pady=10, padx=10)
 
-        for book in books:
-            self.list_label = tk.CTkLabel(master=self.list_frame, text=f"{book}", font=('Arial', 18, 'bold'))
-            self.list_label.pack()
-
         self.display_books()
 
     # Functions
